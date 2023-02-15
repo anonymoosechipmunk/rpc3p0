@@ -22,6 +22,11 @@
       "name": "server",
       "command": "cd server && yarn start",
       "runAtStart": true
+    },
+    "cd client && yarn start": {
+      "name": "cd client && yarn start",
+      "command": "cd client && yarn start",
+      "runAtStart": true
     }
   }
 }
