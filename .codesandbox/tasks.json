@@ -1,6 +1,15 @@
 {
   // These tasks will run in order when initializing your CodeSandbox project.
-  "setupTasks": [],
+  "setupTasks": [
+    {
+      "name": "yarn install client",
+      "command": "cd client && yarn"
+    },
+    {
+      "name": "yarn install server",
+      "command": "cd server && yarn"
+    }
+  ],
 
   // These tasks can be run from CodeSandbox. Running one will open a log in the app.
   "tasks": {
@@ -13,10 +22,6 @@
       "name": "server",
       "command": "cd server && yarn start",
       "runAtStart": true
-    },
-    "(cd client && yarn) && (cd server && yarn)": {
-      "name": "(cd client && yarn) && (cd server && yarn)",
-      "command": "(cd client && yarn) && (cd server && yarn)"
     }
   }
 }
